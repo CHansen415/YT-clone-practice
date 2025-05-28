@@ -1,0 +1,16 @@
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body{
+    margin-left: 230px;
+    padding-top: 75px;
+    padding-bottom: 1000px;
+}
