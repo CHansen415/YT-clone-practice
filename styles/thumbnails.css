@@ -54,6 +54,22 @@
     column-gap: 15px;
     row-gap: 40px;
 }
+@media (min-width: 1250px){
+    .vid-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1000px){
+    .vid-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 750px){
+    .vid-grid{
+        grid-template-columns: 1fr;
+    }
+}
 
 .vid-time{
     background-color: rgb(73, 71, 71);

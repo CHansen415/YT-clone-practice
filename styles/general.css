@@ -13,4 +13,6 @@ body{
     margin-left: 230px;
     padding-top: 75px;
     padding-bottom: 1000px;
+    padding-right: 20px;
+    background-color: rgb(246, 246, 246);
 }

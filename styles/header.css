@@ -108,7 +108,12 @@ nav{
     font-weight: 480;
     cursor: pointer;
 }
-
+.noti-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .noti-icon{
     height: 30px;
     width: 30px;
@@ -116,6 +121,25 @@ nav{
     cursor: pointer;
     transition: .3s;
     border: none;
+    position: relative;
+}
+.noti-box .tooltip{
+    position: absolute;
+    opacity: 0;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    bottom: -7px;
+    background-color: lightgray;
+    border-radius: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    pointer-events: none;
+
+}
+.noti-box:hover .tooltip{
+    opacity: 1;
 }
 .noti-icon:hover{
     background-color:black;
@@ -135,12 +159,37 @@ nav{
 
 .sidebar{
     position: fixed;
-    top: 55px;
+    top: 50px;
     left: 0px;
-    width: 200px;
+    width: 150px;
     bottom: 0px;
-    background-color: aqua;
-    border-right-style: solid;
-    border-right-color: gray;
+}
 
+.sidebar-link{
+    background-color: white;
+    height: 85px;
+    border-bottom: solid;
+    border-right: solid;
+    border-bottom-color: lightgray;
+    border-right-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebar-link:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.sidebar-link img{
+    height:35px;
+    margin-bottom: 3px;
+}
+
+.sidebar-link div{
+    font-family: Roboto, Arial;
+    font-size: 15px;
 }
